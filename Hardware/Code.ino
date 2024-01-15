@@ -7,12 +7,12 @@ WiFiClient client;
 HTTPClient http;
 BluetoothSerial SerialBT;
 
-const char *ssid = ""; // Replace with your Wi-Fi network name
-const char *password = "";   // Replace with your Wi-Fi password
-String URL = "https://172.16.197.71/your_endpoint";
+const char *ssid = "PIRATES NETWORK"; // Replace with your Wi-Fi network name
+const char *password = "CAPTAINJS";   // Replace with your Wi-Fi password
+String URL = "https://192.168.51.17/your_endpoint";
 String mac = "48:74:12:94:62:6a";
 
-int inputPin = 2; // choose the input pin (for PIR sensor)
+int inputPin = 15; // choose the input pin (for PIR sensor)
 int val = 0;      // variable for reading the pin status
 unsigned long previousMillis = 0;
 unsigned long interval = 10000; // 10 seconds in milliseconds
@@ -129,3 +129,8 @@ void loop()
         }
     }
 }
+
+// Flash mode:Dio
+// Flash size:4MB
+// Partition:huge app
+// Input pin: 15
